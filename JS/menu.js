@@ -8,7 +8,7 @@ const menuItems = [
     //allows for string interpolation ${ } - automatically replaces variables and expressions with real values
     { name: "Essays", href: `${root}/HTML/essays.html` },
     { name: "Portfolio", href: `${root}/HTML/portfolio.html` },
-    { name: "Portfolio", href: `${root}/HTML/portfolio.html` },
+    { name: "Profile", href: `${root}/HTML/profile.html` },
     { name: "Design", href: `${root}/HTML/design.html` },
 ]
 export function initialise(currentPage) {
