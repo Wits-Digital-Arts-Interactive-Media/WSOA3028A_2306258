@@ -1,28 +1,45 @@
-const blogPosts = [
-    {_id: 0, name: "Blog-1", href: "./HTML/Blog/b1.html"},
-    {_id: 1, name: "Blog-2", href: "./blog2.html"},
-    {_id: 2, name: "Blog-3", href: "./blog3.html"},
-    {_id: 3, name: "Blog-4", href: "./blog4.html"},
-]
+const contentData = {
+    home: "<h2>Welcome to the Home Page</h2><p>This is the home page content.</p>",
+    about: "<h2>About Us</h2><p>Learn more about our company.</p>",
+    services: "<h2>Our Services</h2><p>Explore the services we offer.</p>",
+    contact: "<h2>Contact Us</h2><p>Get in touch with us.</p>"
+};
 
-export function blogNavigation (currentPage) {
-    const navigation = document.querySelector("blog-Nav")
-    if (currentPage = blogPosts[0]._id) {
-        const a = document.createElement("a")
-        a.innerText = "Next"
-        a.setAttribute("href", blogPosts[1].href)
-    }
-    else if (currentPage = blogPosts[blogPosts.length - 1]._id) {
-        const b = document.createElement("b")
-        b.innerText = "Previous"
-        b.setAttribute("href", blogPosts[blogPosts.length - 2].href)
-    }
-    else {
-        const c = doncument.createElement("c")
-        c.innerText = "Next"
-        c.setAttribute("href", blogPosts[currentPage + 1])
-        const d = document.createElement("d")
-        d.innertext = "Previous"
-        d.setAttribute("href", blogPosts[currentPage - 1])
+// Function to handle navigation
+function navigate(event) {
+    event.preventDefault();
+    const page = event.target.dataset.page;
+    if (contentData.hasOwnProperty(page)) {
+        loadContent(contentData[page]);
+        updateActiveLink(event.target);
+    } else {
+        loadContent("<h2>Page Not Found</h2><p>The requested page does not exist.</p>");
     }
 }
+
+// Function to load content into the content div
+function loadContent(content) {
+    const contentDiv = document.getElementById('content');
+    contentDiv.innerHTML = content;
+}
+
+// Function to update the active link in the navigation
+function updateActiveLink(clickedLink) {
+    const navLinks = document.querySelectorAll('#main-nav a');
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+    clickedLink.classList.add('active');
+}
+
+// Add event listeners to navigation links
+const navLinks = document.querySelectorAll('#main-nav a');
+navLinks.forEach(link => {
+    link.addEventListener('click', navigate);
+});
+
+// Load default content on page load
+window.addEventListener('load', () => {
+    loadContent(contentData.home);
+    document.querySelector('[data-page="home"]').classList.add('active');
+});
