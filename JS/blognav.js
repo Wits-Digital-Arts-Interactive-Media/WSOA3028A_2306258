@@ -1,45 +1,28 @@
-const contentData = {
-    home: "<h2>Welcome to the Home Page</h2><p>This is the home page content.</p>",
-    about: "<h2>About Us</h2><p>Learn more about our company.</p>",
-    services: "<h2>Our Services</h2><p>Explore the services we offer.</p>",
-    contact: "<h2>Contact Us</h2><p>Get in touch with us.</p>"
-};
+const root = "/WSOA3028A_2306258";
 
-// Function to handle navigation
-function navigate(event) {
-    event.preventDefault();
-    const page = event.target.dataset.page;
-    if (contentData.hasOwnProperty(page)) {
-        loadContent(contentData[page]);
-        updateActiveLink(event.target);
-    } else {
-        loadContent("<h2>Page Not Found</h2><p>The requested page does not exist.</p>");
+const blogItems = [
+    { name: "Home", href: root + "/Blogs/b1.html" },
+    //Type Coercion - it is taking a const, adding it to a string and making it the string it expects
+    { name: "Blog", href: `${root}/HTML/blog.html` },
+    //back-tick syntax (template strings) `...` - allows the use of whitespace, ", ', interpolation, and substitution
+    //allows for string interpolation ${ } - automatically replaces variables and expressions with real values
+    { name: "Essays", href: `${root}/HTML/essays.html` },
+    { name: "Portfolio", href: `${root}/HTML/portfolio.html` },
+    { name: "Profile", href: `${root}/HTML/profile.html` },
+    { name: "Design", href: `${root}/HTML/design.html` },
+]
+export function initialise(currentPage) {
+    const nav = document.querySelector("header > nav")
+    const ul = document.createElement("ul")
+    for (let menuItem of blogItems) {
+        const li = document.createElement("li")
+        if (currentPage != blogItems.name) {
+            const a = document.createElement("a")
+            a.innerText = blogItemsItem.name
+            a.setAttribute("href", blogItems.href)
+            li.appendChild(a)
+        } else { li.innerText = blogItems.name }
+        ul.appendChild(li)
     }
+    nav.appendChild(ul)
 }
-
-// Function to load content into the content div
-function loadContent(content) {
-    const contentDiv = document.getElementById('content');
-    contentDiv.innerHTML = content;
-}
-
-// Function to update the active link in the navigation
-function updateActiveLink(clickedLink) {
-    const navLinks = document.querySelectorAll('#main-nav a');
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-    });
-    clickedLink.classList.add('active');
-}
-
-// Add event listeners to navigation links
-const navLinks = document.querySelectorAll('#main-nav a');
-navLinks.forEach(link => {
-    link.addEventListener('click', navigate);
-});
-
-// Load default content on page load
-window.addEventListener('load', () => {
-    loadContent(contentData.home);
-    document.querySelector('[data-page="home"]').classList.add('active');
-});
