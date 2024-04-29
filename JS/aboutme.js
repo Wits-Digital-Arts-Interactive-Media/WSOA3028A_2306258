@@ -5,20 +5,24 @@
 
  // Array of random facts
  const facts = [
-  "The shortest war in history was between Britain and Zanzibar on August 27, 1896. Zanzibar surrendered after 38 minutes.",
-  "The Great Wall of China is not visible from space without aid.",
-  "Bananas are berries, but strawberries aren't.",
-  "The national animal of Scotland is the unicorn.",
-  "The Eiffel Tower can be 15 cm taller during the summer due to thermal expansion of the metal.",
-  "The average person spends 6 months of their lifetime waiting on a red light to turn green.",
-  "A group of flamingos is called a flamboyance.",
-  "The oldest known living land animal is Jonathan, a Seychelles giant tortoise that is at least 188 years old.",
-  "Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible."
+  "I can code in four different languages, C#, HTML, CSS and JavaScript.",
+  "I also happen to be familiar with with Unreal engine- making games there.",
+  "I like group work but also being a lone wolf.",
+  "I am a competitive athlete-but also injury prone :(.",
+  "I like designing games and making interactive stories.",
+  "I like researching design stuff, like cool colour palettes and fonts and stuff.",
+  "I love sleep.",
+  "I play alot of video games.",
+  "I like doing more design stuff- making things pretty :).",
+  "I love getting active- I am low-key comeptitive.",
+  "Did i mention i love sleep?",
+  "I like learning too!",
+  "I love puppies!"
 ];
 
 // Function to generate a random fact
 function generateRandomFact() {
-  var randomIndex = Math.floor(Math.random() * facts.length);
+  const randomIndex = Math.floor(Math.random() * facts.length);
   return facts[randomIndex];
 }
 
