@@ -9,10 +9,14 @@
 
     <title>Profile</title>
 
+    <!--The 'script ref is for the navigation'-->
     <script type="module">
         import { initialise } from "../JS/menu.js"
         initialise("Profile");
         </script>
+
+        <!--The 'script' ref is to refeernce the dun dact generator-->
+        <script src="../JS/aboutme.js"></script>
 </head>
 <body>
     <header>
@@ -44,10 +48,11 @@
         
         <strong><p> What else about me??</p></strong>
 
-        <button onclick="changeText()">Click here to find out...</button></p>
-       <div id="myDIV">I like Puppies</div>
- 
-        
+        <div id="fact-container">
+            <p id="fact-text">Click the button to generate a random fact</p>
+            <button id="generate-btn">What do you like Fefe?</button>
+        </div>
+
     </section>
 
     <br>
