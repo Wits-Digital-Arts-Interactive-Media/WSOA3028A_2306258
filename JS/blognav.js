@@ -1,6 +1,5 @@
 const root = "/WSOA3028A_2306258"
 
-const lastBlog = 10
 
 const blogItems = [
     {name: "", week:"0", href: ``},

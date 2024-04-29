@@ -24,5 +24,5 @@ export function initialise(currentPage) {
         } else { li.innerText = menuItem.name }
         ul.appendChild(li)
     }
-    blogsec.appendChild(ul)
+    nav.appendChild(ul)
 }
