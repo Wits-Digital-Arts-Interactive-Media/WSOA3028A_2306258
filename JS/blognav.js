@@ -2,17 +2,15 @@ const root = "/WSOA3028A_2306258"
 
 
 const blogItems = [
-    {name: "", week:"0", href: ``},
-    {name: "Git - The enemy", blog:"1", href: `${root}./HTML/Blogs/b1.html`},
-    {name: "The Wireframes", blog:"2", href: `${root}/blogs/blog2.html`},
-    {name: "Semantic Markup", blog:"3", href: `${root}/blogs/blog3.html`},
-    {name: "IxD Process", blog:"4", href: `${root}/blogs/blog4.html`},
-    {name: "", blog:"5", href: ``},
-    {name: "UX and UX of Websites", blog:"6", href: `${root}/blogs/blog6.html`},
-    {name: "", blog:"7", href: ``},
-    {name: "Ethical Dilemmas in Software Engineering", blog:"8", href: `${root}/blogs/blog8.html`},
-    {name: "Internet is a human right", blog:"9", href: `${root}/blogs/blog9.html`},
-    {name: "Fourth Industrial Revolution", blog:"10", href: `${root}/blogs/blog10.html`},
+    {name: "Intro to Github", blog:"1", href: `${root}/HTML/Blogs/b1.html`},
+    {name: "Folder Structure and Stuff", blog:"2", href: `${root}/HTML/Blogs/b2.html`},
+    {name: "Interaction Design...oouuuu", blog:"3", href: `${root}HTML/Blogs/b3.html`},
+    {name: "IxD Process, aka what i'm thinking", blog:"4", href: `${root}/HTML/Blogs/b4.html`},
+    {name: "UX and UI analysis of Websites", blog:"5", href: `${root}/HTML/Blogs/b5.html`},
+    {name: "UX and UX of Websites", blog:"6", href: `${root}/HTML/Blogs/b6.html`},
+    {name: "Ethical Dilemmas in Software Engineering", blog:"7",href: `${root}/HTML/Blogs/b7.html` },
+    {name: "Internet Access is a fundamental right", blog:"8", href: `${root}/HTML/Blog/b8.html`},
+    {name: "Making Feminist Internet in Africa", blog:"8", href: `${root}/HTML/Blog/b9.html`},
 
 ]
 
