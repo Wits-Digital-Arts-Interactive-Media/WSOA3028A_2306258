@@ -3,7 +3,7 @@ const root = "/WSOA3028A_2306258"
 
 const blogItems = [
     {name: "", week:"0", href: ``},
-    {name: "Git - The enemy", blog:"1", href: `${root}./HTML/Blogs/b1.html`},
+    {name: "Git - The enemy", blog:"1", href: `${root}/HTML/Blogs/b1.html`},
     {name: "The Wireframes", blog:"2", href: `${root}/blogs/blog2.html`},
     {name: "Semantic Markup", blog:"3", href: `${root}/blogs/blog3.html`},
     {name: "IxD Process", blog:"4", href: `${root}/blogs/blog4.html`},
