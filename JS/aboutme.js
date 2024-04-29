@@ -20,20 +20,20 @@
   "I love puppies!"
 ];
 
-// Function to generate a random fact
+// Function to generate a random fact about me, this is at random no order
 function generateRandomFact() {
   const randomIndex = Math.floor(Math.random() * facts.length);
   return facts[randomIndex];
 }
 
-// Function to display a random fact
+// Function to display a random fact- again at random
 function displayRandomFact() {
   var factText = generateRandomFact();
   document.getElementById('fact-text').textContent = factText;
 }
 
-// Add event listener to the button
-document.getElementById('generate-btn').addEventListener('click', displayRandomFact);
+// Add event listener to the button- JS stuff practicing
+document.getElementById('button').addEventListener('click', displayRandomFact);
 
 
   // the code below still needs work: it would really register my conditions and i couldnt fix it
