@@ -1,10 +1,12 @@
+//this is basically the same code as the menu js but just an id addtion and tweaks to the nammes
+
 const root = "/WSOA3028A_2306258"
 
 
 const blogItems = [
     {name: "Intro to Github", blog:"1", href: `${root}/HTML/Blogs/b1.html`},
     {name: "Folder Structure and Stuff", blog:"2", href: `${root}/HTML/Blogs/b2.html`},
-    {name: "Interaction Design...oouuuu", blog:"3", href: `${root}HTML/Blogs/b3.html`},
+    {name: "Interaction Design...oouuuu", blog:"3", href: `${root}/HTML/Blogs/b3.html`},
     {name: "IxD Process, aka what i'm thinking", blog:"4", href: `${root}/HTML/Blogs/b4.html`},
     {name: "UX and UI analysis of Websites", blog:"5", href: `${root}/HTML/Blogs/b5.html`},
     {name: "UX and UX of Websites", blog:"6", href: `${root}/HTML/Blogs/b6.html`},
