@@ -10,8 +10,8 @@ const blogItems = [
     {name: "IxD Process, aka what i'm thinking", blog:"4", href: `${root}/HTML/Blogs/b4.html`},
     {name: "UX and UI analysis of Websites", blog:"5", href: `${root}/HTML/Blogs/b5.html`},
     {name: "Ethical Dilemmas in Software Engineering", blog:"6",href: `${root}/HTML/Blogs/b6.html` },
-    {name: "Internet Access is a fundamental right", blog:"7", href: `${root}/HTML/Blog/b7.html`},
-    {name: "Making Feminist Internet in Africa", blog:"8", href: `${root}/HTML/Blog/b8.html`},
+    {name: "Internet Access is a fundamental right", blog:"7", href: `${root}/HTML/Blogs/b7.html`},
+    {name: "Making Feminist Internet in Africa", blog:"8", href: `${root}/HTML/Blogs/b8.html`},
 
 ]
 
