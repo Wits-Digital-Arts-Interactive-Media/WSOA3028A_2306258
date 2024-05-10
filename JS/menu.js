@@ -6,6 +6,7 @@ const menuItems = [
     { name: "Home", href: root + "/index.html" },
     { name: "Blog", href: `${root}/HTML/blog.html` },
     { name: "Portfolio", href: `${root}/HTML/portfolio.html` },
+    { name: "Essays", href: `${root}/HTML/essays.html` },
     { name: "Profile", href: `${root}/HTML/profile.html` },
     { name: "Design", href: `${root}/HTML/design.html` },
 ]
