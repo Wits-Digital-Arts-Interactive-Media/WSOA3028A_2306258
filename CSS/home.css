@@ -1,0 +1,33 @@
+/****************************************TEXT STYLING********************************************/
+
+nav{
+    text-align: right;
+    text-decoration: none;
+}
+
+h1{
+font-family:'Times New Roman', Times, serif;
+font-style: italic;
+text-align: center;
+}
+
+.description{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: right;
+    margin-right: 15em;
+}
+
+footer{
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-size:  15px;
+display: block;
+position: relative;
+}
+
+
+
+
+
+/****************************************IMAGE STYLING********************************************/
