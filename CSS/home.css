@@ -1,14 +1,39 @@
 /****************************************TEXT STYLING********************************************/
 
-nav{
-    text-align: right;
+body{
+    background-color: #DCC7BE ;
+}
+
+nav {
+    background-color: #DCC7BE ;
+    padding: 1em 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: #4D4847; 
     text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 h1{
 font-family:'Times New Roman', Times, serif;
 font-style: italic;
 text-align: center;
+margin-top: 50px;
 }
 
 .description{
@@ -17,6 +42,7 @@ text-align: center;
     text-align: right;
     margin-right: 15em;
 }
+
 
 footer{
 text-align: center;
