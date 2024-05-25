@@ -1,13 +1,13 @@
 /****************************************TEXT STYLING********************************************/
 
 body{
-    background-color: #DCC7BE ;
+    background-color: #DCC7BE  ;
 }
 
 nav {
-    background-color: #DCC7BE ;
+    background-color: white;
     padding: 1em 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
 }
 
 nav ul {
@@ -21,7 +21,7 @@ nav li {
 }
 
 nav a {
-    color: #4D4847; 
+    color: black; 
     text-decoration: none;
     font-weight: bold;
     padding: 0.5em 1em;
