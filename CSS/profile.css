@@ -1,7 +1,30 @@
+/***********************************TEXT STYLING**********************************************/
+
 .profile-text{
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 p{
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+h3{
+    text-align: center;
+}
+
+#button{
+    position: relative;
+    left: 689px;
+}
+
+/***********************************IMAGE STYLING**********************************************/
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50% ;
+    image-rendering: optimizeQuality;
+  }
