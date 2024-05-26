@@ -28,7 +28,7 @@ function generateRandomFact() {
 
 // Function to display a random fact- again at random
 function displayRandomFact() {
-  var factText = generateRandomFact();
+  const factText = generateRandomFact();
   document.getElementById('fact-text').textContent = factText;
 }
 
