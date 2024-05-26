@@ -33,7 +33,7 @@ h1{
 font-family:'Times New Roman', Times, serif;
 font-style: italic;
 text-align: center;
-margin-top: 50px;
+margin-top: 2em;
 }
 
 
@@ -47,11 +47,14 @@ position: relative;
 
 #typedtext{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    position: relative ;
-    left: 500px;
-    bottom: 200px;
+    font-size: 25px;
+    font-style: italic;
+    position: relative;
+    bottom: 280px;
+    padding-left: 660px;
+   
 }
+ 
 
 
 
@@ -60,9 +63,8 @@ position: relative;
 
 img{
     position: relative;
-    left: 150px;
-    top: 45px;
-
+    padding-left: 300px;
+    padding-top: 30px;
 }
 
 .line-1{
@@ -71,7 +73,6 @@ img{
     width: 24em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
