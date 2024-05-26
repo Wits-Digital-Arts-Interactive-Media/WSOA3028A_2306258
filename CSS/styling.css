@@ -1,0 +1,51 @@
+/****************************************GENERAL WEBSITE STYLING********************************************/
+
+body{
+    background-color: #DCC7BE  ;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.571);
+    padding: 1em 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: black; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+h1{
+font-family:'Times New Roman', Times, serif;
+font-style: italic;
+text-align: center;
+margin-top: 2em;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.158);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.755);
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+ }
