@@ -5,7 +5,7 @@ body{
 }
 
 nav {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.571);
     padding: 1em 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
 }
@@ -37,13 +37,20 @@ margin-top: 2em;
 }
 
 
-footer{
-text-align: center;
-font-family: 'Times New Roman', Times, serif;
-font-size:  15px;
-display: block;
-position: relative;
-}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.158);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.755);
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+ }
+
+ 
 
 #typedtext{
     font-family: 'Times New Roman', Times, serif;
@@ -55,6 +62,14 @@ position: relative;
    
 }
  
+.btn{
+   font-size: 25px;
+   word-spacing: 0px;
+   cursor: pointer;
+   background-color: rgba(255, 255, 255, 0);
+   border: none;
+   word-spacing: 100px;
+}
 
 
 
