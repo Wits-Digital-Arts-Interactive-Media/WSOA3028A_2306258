@@ -4,7 +4,7 @@ body{
     background-color: #DCC7BE  ;
 }
 
-nav {
+#nav {
     background-color: rgba(255, 255, 255, 0.571);
     padding: 1em 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
@@ -38,7 +38,7 @@ margin-top: 2em;
 
 
 .footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;

@@ -1,39 +1,37 @@
-// set up text to print, each item in array is new line
-var aText = new Array(
-    "Heyyy there!", 
-    "Welcome to my website.",
-    "Explore the wonders of being a UI/UX designer."
-    );
-    var iSpeed = 100; // time delay of print out
-    var iIndex = 0; // start printing array at this posision
-    var iArrLength = aText[0].length; // the length of the text array
-    var iScrollAt = 20; // start scrolling up at this many lines
-     
-    var iTextPos = 0; // initialise text position
-    var sContents = ''; // initialise contents variable
-    var iRow; // initialise current row
-     
-    function typewriter()
-    {
-     sContents =  ' ';
-     iRow = Math.max(0, iIndex-iScrollAt);
-     var destination = document.getElementById("typedtext");
-     
-     while ( iRow < iIndex ) {
-      sContents += aText[iRow++] + '<br />';
-     }
-     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-     if ( iTextPos++ == iArrLength ) {
-      iTextPos = 0;
-      iIndex++;
-      if ( iIndex != aText.length ) {
-       iArrLength = aText[iIndex].length;
-       setTimeout("typewriter()", 500);
+ // Array of strings to display
+ const texts = [
+    "Hello, welcome to the typewriter effect!",
+    "This is a simple demonstration.",
+    "You can customize this further as needed."
+  ];
+
+  // Index of the current text being displayed
+  let textIndex = 0;
+  // Index of the character within the current text
+  let charIndex = 0;
+
+  // Function to display text with typewriter effect
+  function typeWriter() {
+    if (textIndex < texts.length) {
+      // Get the current text
+      const currentText = texts[textIndex];
+      // Display one character at a time
+      document.getElementById('typewriter-text').textContent = currentText.slice(0, charIndex + 1);
+      charIndex++;
+
+      // Check if all characters have been displayed for this text
+      if (charIndex <= currentText.length) {
+        // Schedule the next character to be shown after a delay
+        setTimeout(typeWriter, 100); // Adjust speed here (in milliseconds)
+      } else {
+        // Move to the next text in the array
+        textIndex++;
+        charIndex = 0;
+        // Wait before starting to type the next text
+        setTimeout(typeWriter, 1000); // Adjust delay before next text (in milliseconds)
       }
-     } else {
-      setTimeout("typewriter()", iSpeed);
-     }
     }
-    
-    
-    typewriter();
+  }
+
+  // Start the typewriter effect
+  typeWriter();
