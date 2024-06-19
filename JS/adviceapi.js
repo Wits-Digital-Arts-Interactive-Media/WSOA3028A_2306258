@@ -15,7 +15,7 @@ window.onload = () => {
 
 function getAdvice() {
 
-  fetch('	https://api.adviceslip.com/advice').then(response => {
+  fetch('https://api.adviceslip.com/advice').then(response => {
     return response.json();
   }).then(adviceData => {
     const Adviceobj = adviceData.slip;

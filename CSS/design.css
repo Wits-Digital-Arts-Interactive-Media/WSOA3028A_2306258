@@ -1,6 +1,9 @@
 /* Basic sample */
 
-
+.flipbook{
+	width: 550px;
+	height: 400px;
+}
 
 .flipbook-viewport .container{
 	position:relative;
@@ -11,8 +14,6 @@
 
 
 .flipbook-viewport .page{
-	width:461px;
-	height:600px;
 	background-color:white;
 	background-repeat:no-repeat;
 	background-size:100% 100%;
