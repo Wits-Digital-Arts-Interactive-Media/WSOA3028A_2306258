@@ -2,64 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fefe's portfolio website">
     <meta name="description" content ="Homepage">
     <meta name="author" content="Ofentse Magabeane">
+    <title>Homepage</title>
 
-    <title>HomePage</title>
-
-    <!--CSS referecnes-->
-
-    <link rel="stylesheet" href="./CSS/normalize.css" />
-    <link rel="stylesheet" href="./CSS/styling.css" />
-    <link rel="stylesheet" href="./CSS/home.css" />
-    
-
-    <!--JS reference-->
-
-    <script type="module"> import { initialise } from "./JS/menu.js"
-        initialise("Home") </script>
-           <script src="../JS/typewriter.js"></script>
-
-        <!--Adding reference for icons fron Font Awesome-->
-        <script src="https://kit.fontawesome.com/58493d5990.js" crossorigin="anonymous"></script>
+    <!--CSS document linking-->
+    <link rel="stylesheet" href="CSS/styling.css" />
+     
+    <!--JS document linking-->
+     <script type="module">
+      import { initialise } from "../JS/navigation.js"
+      initialise("Home");
+      </script>
+      <script src="JS/typewriter.js"></script>
+  
 </head>
-
 <body>
-    <header>
-
-        <nav>
-      <!--The code below is a container for all the hyperlink
-      that will be shown on my homepage- reference: menu.js-->
-        </nav>
-    
-    </header>
-
-    
-        <h1>FEFE'S PORTFOLIO WEBSITE</h1>
-
-        <img src="https://i.pinimg.com/564x/52/e9/61/52e961b282220dc1ee18e3acbe23f4bd.jpg" alt="Girl coding" width="300" height="400">
-    
-
-        <div class="Text">
-            <!--JS script must be in the id div for the text to appear-->
-            <div id="typewriter-text">
-                
-            </div>
-
-        </div>
-
-        <!--A fixed footer-->
-
-        <div class="footer">
-            <p>Let's keep in touch:</p>
-            <button class="btn"><i class="fa-regular fa-envelope"></i></button>
-            <button class="btn"><i class="fa-brands fa-github"></i></button>
-            <button class="btn"><i class="fa-brands fa-linkedin"></i></button>
-          </div>
-    
-   
+  <header>
+    <nav>
+         <!--The code below is a container for all the hyperlink
+         that will be shown on my homepage-->
+    </nav>
+</header>
+  <h1>Fefe's Portfolio Website</h1>
+  <div id="typewriter-text"></div>
 </body>
 </html>
