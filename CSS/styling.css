@@ -1,32 +1,32 @@
 /****************************************GENERAL WEBSITE STYLING********************************************/
 
 body{
-    background-color: #DCC7BE  ;
+  background-color: #DCC7BE  ;
 }
 
 #nav {
-    background-color: rgba(255, 255, 255, 0.571);
-    padding: 1em 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+  background-color: rgba(255, 255, 255, 0.571);
+  padding: 1em 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 nav li {
-    margin: 0 1em;
+  margin: 0 1em;
 }
 
 nav a {
-    color: black; 
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+  color: black; 
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 h1{
@@ -38,43 +38,172 @@ margin-top: 2em;
 
 
 .footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.158);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.755);
-    color: black;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
- }
-
- .btn{
-    font-size: 25px;
-    word-spacing: 0px;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-    word-spacing: 100px;
- }
-
- .backgorund-image{
-    width: 5px;
-    height: 5%;
- }
-
- /****************************************************RESPONSIVE DESIGN********************************************************** */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav li {
-        margin: 0.5em 0;
-    }
-    
-    footer {
-        position: static;
-    }
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.158);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.755);
+  color: black;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
 }
+
+.btn{
+  font-size: 25px;
+  word-spacing: 0px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  word-spacing: 100px;
+}
+
+.backgorund-image{
+  width: 5px;
+  height: 5%;
+}
+
+/****************************************************RESPONSIVE DESIGN********************************************************** */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav li {
+      margin: 0.5em 0;
+  }
+  
+  footer {
+      position: static;
+  }
+}
+
+
+/****************************************CSS Cards********************************************/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+
+/****************************************Portfolio Formatting********************************************/
+  * {
+    box-sizing:border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container {
+    padding: 64px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  .column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+  }
+  
+  .column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+  
+  .large-font {
+    font-size: 48px;
+  }
+  
+  .xlarge-font {
+    font-size: 64px
+  }
+  
+  .button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #04AA6D;
+  }
+  
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      margin: auto;
+    }
+  }
+
+  /****************************************Typewriter effect********************************************/
+  #typewriter {
+    font-family: monospace;
+    white-space: pre;
+    border-right: 2px solid black;
+    animation: blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
