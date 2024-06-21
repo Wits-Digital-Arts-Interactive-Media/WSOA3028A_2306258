@@ -4,11 +4,11 @@ const root = "/WSOA3028A_2306258";
 
 const menuItems = [
     { name: "Home", href: root + "/index.html" },
-    { name: "Blog", href: `${root}/HTML/blog.html` },
-    { name: "Portfolio", href: `${root}/HTML/portfolio.html` },
-    { name: "Essays", href: `${root}/HTML/essays.html` },
-    { name: "Profile", href: `${root}/HTML/profile.html` },
-    { name: "Design", href: `${root}/HTML/design.html` },
+    { name: "Blog", href: `${root}/blog/blog.html` },
+    { name: "Portfolio", href: `${root}/portfolio/portfolio.html` },
+    { name: "Essays", href: `${root}/essays/essays.html` },
+    { name: "Profile", href: `${root}/profile/profile.html` },
+    { name: "Design", href: `${root}/design/design.html` },
 ]
 export function initialise(currentPage) {
     const nav = document.querySelector("header > nav")
