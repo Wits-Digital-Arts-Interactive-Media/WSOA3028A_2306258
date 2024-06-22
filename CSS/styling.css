@@ -42,7 +42,7 @@ a{
 
 
 .footer {
-  position: relative;
+  position:static;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -82,10 +82,6 @@ a{
 
   nav li {
       margin: 0.5em 0;
-  }
-  
-  footer {
-      position: static;
   }
 }
 
