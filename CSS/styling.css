@@ -36,9 +36,13 @@ text-align: center;
 margin-top: 2em;
 }
 
+a{
+  color: black;
+}
+
 
 .footer {
-  position: relative;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -48,6 +52,12 @@ margin-top: 2em;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-size: 15px;
+}
+
+.footer-icons{
+  font-size: 25px;
+  word-spacing: 15px;
+  text-decoration: none;
 }
 
 .btn{
@@ -77,6 +87,10 @@ margin-top: 2em;
   footer {
       position: static;
   }
+}
+
+.responsive {
+  height: auto;
 }
 
 
@@ -192,18 +206,6 @@ margin-top: 2em;
   }
 
   /****************************************Typewriter effect********************************************/
-  #typewriter {
-    font-family: monospace;
-    white-space: pre;
-    border-right: 2px solid black;
-    animation: blink-caret 0.75s step-end infinite;
-  }
-  
-  @keyframes blink-caret {
-    from, to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: black;
-    }
-  }
+ #typewriter-text{
+  text-align: center;
+ }
