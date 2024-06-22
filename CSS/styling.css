@@ -36,8 +36,14 @@ text-align: center;
 margin-top: 2em;
 }
 
+h2{
+  font-family: 'Times New Roman', Times, serif;
+}
+
 a{
   color: black;
+  font-size: 17px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -76,6 +82,8 @@ a{
 
 p{
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
 }
 
 /****************************************************RESPONSIVE DESIGN********************************************************** */
@@ -96,52 +104,47 @@ p{
 
 /****************************************CSS Cards********************************************/
 
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Float four columns side by side */
-  .column {
-    float: left;
-    width: 25%;
-    padding: 0 20px;
-  }
-  
-  /* Remove extra left and right margins, due to padding */
-  .row {margin: 0 -5px;}
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.345);
-    padding: 60px;
-    text-align: center;
-    background-color: #DCC7BE ;
-  }
+/* Card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center cards horizontally */
+  padding: 20px;
+}
 
-  .cards-design{
-    margin-left: 30em;
-    margin-top: 5em;
+/* Card styling */
+.card {
+  width: 300px;   /* Adjust width */
+  height: 400px;  /* Adjust height */
+  padding: 20px;
+  font-size: 1.2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.316);
+  transition: 0.3s;
+  border-radius: 10px;
+  background-color:#DCC7BE ;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+.card img {
+  width: 100%; /* Ensure images scale with the card */
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-container {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
   }
+  .card {
+      width: 100%; /* Full width cards on smaller screens */
+      margin-bottom: 20px;
+  }
+}
 
 /****************************************Portfolio Formatting********************************************/
   * {
