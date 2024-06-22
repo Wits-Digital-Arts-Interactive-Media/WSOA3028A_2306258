@@ -207,5 +207,8 @@ a{
 
   /****************************************Typewriter effect********************************************/
  #typewriter-text{
-  text-align: center;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 30em;
  }
