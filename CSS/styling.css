@@ -7,7 +7,7 @@ body{
 #nav {
   background-color: rgba(255, 255, 255, 0.571);
   padding: 1em 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.082);
 }
 
 nav ul {
@@ -74,6 +74,10 @@ a{
   height: 5%;
 }
 
+p{
+  text-align: center;
+}
+
 /****************************************************RESPONSIVE DESIGN********************************************************** */
 @media (max-width: 768px) {
   nav ul {
@@ -104,7 +108,7 @@ a{
   .column {
     float: left;
     width: 25%;
-    padding: 0 10px;
+    padding: 0 20px;
   }
   
   /* Remove extra left and right margins, due to padding */
@@ -128,12 +132,16 @@ a{
   
   /* Style the counter cards */
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.345);
+    padding: 60px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: #DCC7BE ;
   }
 
+  .cards-design{
+    margin-left: 30em;
+    margin-top: 5em;
+  }
 
 /****************************************Portfolio Formatting********************************************/
   * {
