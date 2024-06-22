@@ -61,9 +61,12 @@ a{
 }
 
 .footer-icons{
-  font-size: 25px;
   word-spacing: 15px;
   text-decoration: none;
+}
+
+i{
+  font-size: 25px;
 }
 
 .btn{
@@ -84,6 +87,10 @@ p{
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-size: 17px;
+}
+
+.content-container{
+  margin-top: 5em;
 }
 
 /****************************************************RESPONSIVE DESIGN********************************************************** */
@@ -219,3 +226,19 @@ p{
   font-family: 'Times New Roman', Times, serif;
   margin-left: 30em;
  }
+
+ /********************************************Button styling*************************************************************/
+
+ button{
+  background-color: #b58ca8;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 3px;
+  cursor: pointer;
+  margin-left: 42em;
+}
