@@ -43,12 +43,11 @@ a{
 
 .footer {
   clear: both;
-  position: relative;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.158);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
   color: black;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
