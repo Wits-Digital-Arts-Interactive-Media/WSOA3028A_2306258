@@ -11,8 +11,8 @@
   
   /* Header/Blog Title */
   .header {
-    padding: 30px;
-    font-size: 40px;
+    padding: 15px;
+    font-size: 25px;
     text-align: center;
     
   }
@@ -22,6 +22,7 @@
   .leftcolumn {   
     float: left;
     width: 75%;
+    margin-left: 10em;
   }
   
   /* Right column */
@@ -34,13 +35,14 @@
   /* Fake image */
   .fakeimg {
     background-color: #aaa;
-    width: 100%;
-    padding: 20px;
+    width: 60%;
+    padding: 30px;
+    margin-left: 10em;
   }
   
   /* Add a card effect for articles */
   .card {
-     background-color: white;
+     background-color: rgba(169, 135, 144, 0.336);
      padding: 20px;
      margin-top: 20px;
   }
