@@ -84,7 +84,7 @@ i{
 
 p{
     font-family: 'Times New Roman', Times, serif;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .content-container{
@@ -215,4 +215,12 @@ img{
 
 .portfolio-project-description{
   float: left;
+}
+
+.DevDesign-notes{
+  text-align: center;
+}
+
+h3{
+  font-family: 'Times New Roman', Times, serif;
 }
