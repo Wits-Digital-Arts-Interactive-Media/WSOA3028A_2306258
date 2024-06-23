@@ -83,7 +83,7 @@ i{
 }
 
 p{
-    font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
 }
 
@@ -162,6 +162,10 @@ p{
     height: auto;
     max-width: 100%;
   }
+
+  .table{
+    margin-left: 10em;
+  }
   
   
   @media screen and (max-width: 1000px) {
@@ -208,20 +212,14 @@ p{
 }
 
 .home-img{
-  margin-left: 10em;
+  margin-left: 34em;
 }
+
 
 
 
 /************************************************Text styling********************************************************************/
 
-.description-home{
-  margin-left: 40em;
-  padding: 20px 0px;
-}
-.portfolio-project-description{
-  float: left;
-}
 
 .DevDesign-notes{
   text-align: center;
