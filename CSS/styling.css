@@ -156,6 +156,13 @@ p{
     cursor: pointer;
     background-color: #04AA6D;
   }
+
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    height: 40%;
+  }
   
   
   @media screen and (max-width: 1000px) {
