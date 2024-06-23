@@ -157,12 +157,6 @@ p{
     background-color: #04AA6D;
   }
   
-  /*img {
-    display: block;
-    height: auto;
-    width: 110%;
-    height: 110%;
-  }*/
   
   @media screen and (max-width: 1000px) {
     .column-66,
@@ -177,11 +171,11 @@ p{
 
   /****************************************Typewriter effect********************************************/
  #typewriter-text{
-  text-align: left;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
-  margin-left: 30em;
+  margin-left: 40em;
  }
+
 
  /********************************************Button styling*************************************************************/
 
@@ -207,6 +201,10 @@ p{
 
 .portfolio-images{
   margin-left: 50em;
+}
+
+.home-img{
+  margin-left: 10em;
 }
 
 
