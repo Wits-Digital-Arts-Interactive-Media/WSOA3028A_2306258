@@ -22,7 +22,7 @@
   .leftcolumn {   
     float: left;
     width: 75%;
-    margin-left: 10em;
+    margin-left: 15em;
   }
   
   /* Right column */
@@ -34,7 +34,7 @@
   
   /* Fake image */
   .fakeimg {
-    background-color: #aaa;
+    background-color: #aaaaaa00;
     width: 60%;
     padding: 30px;
     margin-left: 10em;

@@ -144,7 +144,8 @@ p{
   }
   
   .xlarge-font {
-    font-size: 64px
+    font-size: 64px;
+    margin-top: 2px;
   }
   
   .button {
@@ -159,7 +160,8 @@ p{
   img {
     display: block;
     height: auto;
-    max-width: 100%;
+    width: 110%;
+    height: 110%;
   }
   
   @media screen and (max-width: 1000px) {
@@ -223,4 +225,9 @@ img{
 
 h3{
   font-family: 'Times New Roman', Times, serif;
+}
+
+.next-prev{
+  float: right;
+  margin-bottom: 5px;
 }
