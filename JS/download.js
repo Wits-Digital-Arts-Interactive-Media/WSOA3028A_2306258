@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (downloadBtn2) {
         downloadBtn2.addEventListener('click', function() {
             console.log("Download button 2 clicked");
-            downloadZip('../../portfolio/games/Resource game.zip', 'Resource game.zip');
+            downloadZip('../WSOA3028A_2306258/portfolio/games/Resource game.zip', 'Resource game.zip');
         });
     } else {
         console.log("Button with ID 'downloadBtn2' not found");
