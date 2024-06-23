@@ -1,50 +1,44 @@
-// Array of strings to display
-const texts = [
-  "Hello, welcome to the typewriter effect!",
-  "This is a simple demonstration.",
-  "You can customize this further as needed."
+const aText = [
+  "There are only 10 types of people in the world:", 
+  "Those who understand binary, and those who don't"
 ];
+const iSpeed = 100; // Time delay for printing each character
+const iScrollAt = 20; // Start scrolling up at this many lines
 
-// Index of the current text being displayed
-let textIndex = 0;
-// Index of the character within the current text
-let charIndex = 0;
+let iIndex = 0; // Start printing array at this position
+let iTextPos = 0; // Initialize text position
+let sContents = ''; // Initialize contents variable
 
-// Function to display text with typewriter effect
-function typeWriter(texts, elementId, typingSpeed = 100, pauseDuration = 1000, loop = true) {
-  const element = document.getElementById(elementId);
+function typewriter() {
+  const destination = document.getElementById("typedtext");
+  sContents = '';
 
-  function type() {
-    if (textIndex < texts.length) {
-      const currentText = texts[textIndex];
-      // Display one character at a time
-      element.textContent = currentText.slice(0, charIndex + 1);
-      charIndex++;
+  // Determine the current row to print from
+  const iRow = Math.max(0, iIndex - iScrollAt);
 
-      // Check if all characters have been displayed for this text
-      if (charIndex <= currentText.length) {
-        // Schedule the next character to be shown after a delay
-        setTimeout(type, typingSpeed);
-      } else {
-        // Move to the next text in the array
-        textIndex++;
-        charIndex = 0;
-        if (textIndex < texts.length) {
-          // Wait before starting to type the next text
-          setTimeout(type, pauseDuration);
-        } else if (loop) {
-          // Reset to the first text if looping is enabled
-          textIndex = 0;
-          setTimeout(type, pauseDuration);
-        }
-      }
-    }
+  // Build the text up to the current index
+  for (let i = iRow; i < iIndex; i++) {
+      sContents += aText[i] + '<br />';
   }
 
-  type();
+  // Add the current character to the content
+  destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+
+  // Move to the next character
+  iTextPos++;
+
+  // Check if the entire line is printed
+  if (iTextPos === aText[iIndex].length) {
+      iTextPos = 0;
+      iIndex++;
+      // Check if we have more lines to print
+      if (iIndex < aText.length) {
+          setTimeout(typewriter, 500); // Add delay before starting the next line
+      }
+  } else {
+      setTimeout(typewriter, iSpeed); // Continue typing the current line
+  }
 }
 
-// Usage
-document.addEventListener('DOMContentLoaded', () => {
-  typeWriter(texts, 'typewriter-text', 100, 1000, true);
-});
+// Start the typewriter effect
+typewriter();
