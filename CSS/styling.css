@@ -82,11 +82,10 @@ i{
   height: 5%;
 }
 
-/*p{
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+p{
+    font-family: 'Times New Roman', Times, serif;
   font-size: 17px;
-}*/
+}
 
 .content-container{
   margin-top: 5em;
@@ -206,6 +205,10 @@ i{
 
 .portfolio-images{
   margin-left: 50em;
+}
+
+img{
+  image-rendering: optimizeQuality;
 }
 
 /************************************************Text styling********************************************************************/
