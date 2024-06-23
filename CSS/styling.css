@@ -157,12 +157,12 @@ p{
     background-color: #04AA6D;
   }
   
-  img {
+  /*img {
     display: block;
     height: auto;
     width: 110%;
     height: 110%;
-  }
+  }*/
   
   @media screen and (max-width: 1000px) {
     .column-66,
