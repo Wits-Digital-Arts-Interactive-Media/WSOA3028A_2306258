@@ -9,13 +9,19 @@
     <title>Blog</title>
 
     <!-- CSS document linking -->
+    <link rel="stylesheet" href="../CSS/normalize.css" />
     <link rel="stylesheet" href="../CSS/styling.css" />
+    <link rel="stylesheet" href="../CSS/csscards.css" />
 
     <!-- JS document linking -->
     <script type="module">
         import { initialise } from "../JS/navigation.js";
         initialise("Blog");
     </script>
+
+     <!----------Linking Font awesome kit-------------------->
+     <script src="https://kit.fontawesome.com/58493d5990.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
@@ -27,23 +33,21 @@
 
     <h1>Blog:</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at dictum massa. Maecenas luctus mollis cursus. Nulla nec odio eu libero finibus tincidunt. Aliquam vitae sem eu leo imperdiet dictum vel quis leo. Praesent elit ipsum, scelerisque a iaculis sed, fermentum vitae nisi. Donec vel fermentum urna. Praesent gravida odio non ex aliquam accumsan. Nullam ac sodales nulla.</p>
-
-    <div class="cards-design">
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <h3>Card 1</h3>
-                    <a class="blog-link-text" href="../blog/posts.html">Read More</a>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <h3>Card 2</h3>
-                    <a class="blog-link-text" href="../blog/devlog.html">Read More</a>
-                </div>
-            </div>
+    
+    <div class="card-container">
+        <div class="card">
+            <h2>Blog Posts</h2>
+            <img src="https://t4.ftcdn.net/jpg/02/95/64/97/360_F_295649737_34JpknOfj3f28TSfzemZ5tp3CUkadRXX.jpg" alt="Image 3" class="responsive">
+            <a class="blog-link-text" href="../blog/posts.html">Read</a>
         </div>
+        <div class="card">
+            <h2>Dev-Log</h2>
+            <img src="https://img.freepik.com/premium-vector/coding-programming-application-development-concept-young-black-woman-programmer-sitting-big-computer-screen-working-flat-style-banner-design_285336-2365.jpg?w=360" alt="image 4" class="responsive">
+            <a class="blog-link-text" href="../blog/devlog.html">Read</a>
+        </div>
+        <!-- Add more cards as needed -->
     </div>
+
 
      <!-----------------------Footer------------------------------------------->
      <footer>
