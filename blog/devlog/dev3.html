@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fefe's portfolio website">
+    <meta name="description" content="Blogs_Dev-log">
+    <meta name="author" content="Ofentse Magabeane">
+    <title>Dev-log</title>
+
+    <!-- CSS document linking -->
+    <link rel="stylesheet" href="../../CSS/styling.css" />
+    <link rel="stylesheet" href="../../CSS/blog.css" />
+     
+    <!-- JS document linking -->
+    <script type="module">
+        import { initialise } from "../../JS/navigation.js"
+        initialise("Blog");
+    </script>
+
+    <!-- Linking Font awesome kit -->
+    <script src="https://kit.fontawesome.com/58493d5990.js" crossorigin="anonymous"></script>
+      
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- The code below is a container for all the hyperlink
+            that will be shown on my homepage -->
+        </nav>
+    </header>
+
+    <a href="../devlog.html"><i class="fa-solid fa-arrow-left"></i></a>
+
+    <h1>DEV-LOG ENTRY 3: CODE REVIEW</h1>
+    <p>Coding always comes with it’s struggles. I cant always seems to find the best practices and sometimes the worst practices work- such as using VAR. I am very much aware that this is prone to errors but it was the only code that worked when I needed it to, so I ran with it. I did find better coding practices and implemented them to my JavaScript specifically so I did some code reviews with a peer and we looked at a piece of code and identified pros and cons and also researched good recommendations to improve the code, here are a few examples of the reviews we did for my code:</p>
+
+    <h3>factgenerator.js</h3>
+    <img src="../blog_images/factgeneratorcode.png" alt="image blogs-nav code snippet" class="responsive">
+    <img>
+    <h4>Pros:</h4>
+    <p>Array Usage: The use of an array to store random facts is appropriate and scalable.
+    Random Index Generation: The method for generating a random index is efficient and ensures uniform distribution.
+    Separation of Concerns: Functions generateRandomFact() and displayRandomFact() are well-separated, adhering to the single responsibility principle.</p>
+    <h4>Cons:</h4>
+    <p>Hardcoded Strings: The array facts contains hardcoded strings. Consider externalizing this data for easier maintenance.
+    Potential Redundancy: The fact "Did I mention I love sleep?" is redundant since "I love sleep." is already present.
+    getElementById Typo: Ensure there are no typos in your element IDs to avoid runtime errors. In the snippet provided, getElementById('fact-text') seems correct but double-check your HTML for consistency.</p>
+
+    <h3>typewriter.js</h3>
+    <img src="../blog_images/typewritercode-old.png" alt="image blogs-nav code snippet" class="responsive">
+    <h4>Pros:</h4>
+    <p>Typewriter Effect: The typewriter effect is well-implemented with character-by-character display.
+    Function Modularity: The typeWriter() function is self-contained and modular, making it easy to manage and update.
+    Adjustable Speed: The use of setTimeout() allows for easy adjustment of typing speed and delay between texts.</p>
+    <h4>Cons:</h4>
+    <p>Global Variables: textIndex and charIndex are global. Encapsulate them within an object or function to avoid potential conflicts.
+    Magic Numbers: Replace the 100 and 1000 in setTimeout with constants for better readability and maintainability.
+    Hardcoded Strings: Similar to the previous file, consider externalizing the texts array for better scalability.</p>
+
+    <h3>blogsnav.js</h3>
+    <img src="../blog_images/blogsnav-old.png" alt="image blogs-nav code snippet" class="responsive">
+    <h4>Pros:</h4>
+    <p>Event Listener: Proper use of DOMContentLoaded ensures the DOM is fully loaded before executing the script.
+    Separation of Logic: The function buttonClickHandler() is well-defined separately from the event listener.</p>
+    <h4>Cons:</h4>
+    <p>Limited Functionality: The button click handler currently only shows an alert. Expand this functionality to make the button more useful.
+    Hardcoded IDs: The script assumes the presence of an element with ID mybutton. Make sure this ID is correctly assigned in the HTML.
+    Inline Function: Consider defining the event listener function separately rather than inline for better readability and potential reusability.</p>
+
+    <!-- Next and previous navigation -->
+    <a href="../devlog/dev2.html"><i class="fa-solid fa-arrow-leftt"></i></a>
+    <a href="../devlog/dev4.html"><i class="fa-solid fa-arrow-right"></i></a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>Contact:</p>
+            <a href="https://github.com/Fefeswork?tab=repositories"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:ofentse.magabeane@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            <a href=""><i class="fa-brands fa-discord"></i></a>
+            <a href="https://itch.io/profile/fefe-magabeane"><i class="fa-brands fa-itch-io"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
