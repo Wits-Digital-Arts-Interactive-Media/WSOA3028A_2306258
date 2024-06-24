@@ -163,9 +163,7 @@ p{
     max-width: 100%;
   }
 
-  .table{
-    margin-left: 10em;
-  }
+
   
   
   @media screen and (max-width: 1000px) {
@@ -178,6 +176,18 @@ p{
       margin: auto;
     }
   }
+/***************Resource game***************************/
+
+.RM-div{
+  display: flex;
+}
+
+
+.table{
+  float: right;
+  margin-top: 50em;
+  margin-left: 10em;
+}
 
 
  /********************************************Button styling*************************************************************/
@@ -201,6 +211,14 @@ p{
   color: black;
 }
 
+#downloadBtn2{
+  margin-right: 30em;
+}
+
+#downloadBtn1{
+  margin-right: 30em;
+}
+
 /*************************************************images************************************************************/
 
 .bbd-image{
@@ -208,7 +226,7 @@ p{
 }
 
 .portfolio-images{
-  margin-left: 50em;
+margin-left: 5em;
 }
 
 .home-img{
@@ -229,7 +247,4 @@ h3{
   font-family: 'Times New Roman', Times, serif;
 }
 
-.next-prev{
-  float: right;
-  margin-bottom: 5px;
-}
+
