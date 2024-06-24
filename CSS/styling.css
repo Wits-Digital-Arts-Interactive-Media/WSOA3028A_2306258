@@ -186,7 +186,7 @@ p{
 .table{
   float: right;
   margin-top: 50em;
-  margin-left: 10em;
+  margin-left: 15em;
 }
 
 
@@ -246,6 +246,15 @@ margin-left: 5em;
 h3{
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
+}
+
+.DA-description{
+  margin-top: 20em;
+}
+
+.DA-description P{
+  font-size: 10px;
+  margin-left: 5em;
 }
 
 
