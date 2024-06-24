@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (downloadBtnIndex) {
         downloadBtnIndex.addEventListener('click', function() {
             console.log("Download button Index clicked");
-            downloadZip('../WSOA3028A_2306258/portfolio/other/UNII Pitch Deck.pdf', 'UNII App Pitch Deck.pdf');
+            downloadZip('/WSOA3028A_2306258/portfolio/other/UNII Pitch Deck.pdf', 'UNII App Pitch Deck.pdf');
         });
     } else {
         console.log("Button with ID 'downloadBtnIndex' not found");
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (downloadBtn1) {
         downloadBtn1.addEventListener('click', function() {
             console.log("Download button 1 clicked");
-            downloadZip('../WSOA3028A_2306258/portfolio/games/Sushi Go.zip', 'Sushi Go.zip');
+            downloadZip('/WSOA3028A_2306258/portfolio/games/Sushi Go.zip', 'Sushi Go.zip');
         });
     } else {
         console.log("Button with ID 'downloadBtn1' not found");
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (downloadBtn2) {
         downloadBtn2.addEventListener('click', function() {
             console.log("Download button 2 clicked");
-            downloadZip('../portfolio/games/Resource game.zip', 'Resource game.zip');
+            downloadZip('/WSOA3028A_2306258/portfolio/games/Resource game.zip', 'Resource game.zip');
         });
     } else {
         console.log("Button with ID 'downloadBtn2' not found");
