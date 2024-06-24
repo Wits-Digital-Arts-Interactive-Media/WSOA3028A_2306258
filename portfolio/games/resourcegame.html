@@ -3,86 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fefe's portfolio website">
-    <meta name="description" content="Portfolio-games">
-    <meta name="author" content="Ofentse Magabeane">
-    <title>Portfolio:Games</title>
-
-    <!-- CSS document linking -->
-    <link rel="stylesheet" href="../../CSS/normalize.css" />
-    <link rel="stylesheet" href="../../CSS/styling.css" />
-    <link rel="stylesheet" href="" />
-
-    <!-- JS document linking -->
-    <script type="module">
-        import { initialise } from "../../JS/navigation.js"
-        initialise("Portfolio");
-    </script>
+    <title>Portfolio: Games</title>
 
     <!-- Linking Font awesome kit -->
     <script src="https://kit.fontawesome.com/58493d5990.js" crossorigin="anonymous"></script>
+
+    <!-- CSS linking -->
+    <link rel="stylesheet" href="../../CSS/normalize.css">
+    <link rel="stylesheet" href="../../CSS/styling.css">
+    
 </head>
 <body>
     <header>
         <nav>
-            <!-- The code below is a container for all the hyperlink
-            that will be shown on my homepage -->
+            <!-- Navigation links -->
         </nav>
     </header>
 
-    <a href="../games.html"><i class="fa-solid fa-arrow-left"></i></a>
+    <a href="../games.html"><i class="fas fa-arrow-left"></i> Back</a>
 
-    <h1> My Farm: Resource Management Game</h1>
+    <h1>My Farm: Resource Management Game</h1>
     
-        <div class="RM-div">
-            <div class="portfolio-images">
-                <img src="../portfolio_images/RM1.png" alt="RM screenshot 1" class="responsive" width="600" height="500">
-                <img src="../portfolio_images/RM2.png" alt="RM screenshot 2" class="responsive" width="600" height="500">
-                <img src="../portfolio_images/RM3.png" alt="RM screenshot 3" class="responsive" width="600" height="500">
-            </div>
-
-            <div class="table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Category:</th>
-                            <th>Creator:</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Date Completed:</td>
-                            <td>September 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Game programmer:</td>
-                            <td>O Magabeane</td>
-                        </tr>
-                        <tr>
-                            <td>UI/UX Designer:</td>
-                            <td>O Magabeane</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+    <div class="RM-div">
+        <div class="portfolio-images">
+            <!-- Portfolio images -->
+            <img src="../portfolio_images/RM1.png" alt="RM screenshot 1" class="responsive" width="400" height="300">
+            <img src="../portfolio_images/RM2.png" alt="RM screenshot 2" class="responsive" width="400" height="300">
+            <img src="../portfolio_images/RM3.png" alt="RM screenshot 3" class="responsive" width="400" height="300">
         </div>
+
+        <!-- Grid table -->
+        <div class="table">
+            <div class="game-notes">
+                <h4>Do you have what it takes to run your own little farm?</h4>
+                <p>This is a resource management game I designed in 2021. The aim of the game was to produce resources and obtain new resources to help grow your farm. The trading system was a bartering system. Players sold some of their resources to “buy” better ones. Download the game prototype by clicking the button below</p>
+                <h5>Click the Button at the bottom to download the game!</h5>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category:</th>
+                        <th>Creator:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Date Completed:</td>
+                        <td>September 2021</td>
+                    </tr>
+                    <tr>
+                        <td>Game programmer:</td>
+                        <td>O Magabeane</td>
+                    </tr>
+                    <tr>
+                        <td>UI/UX Designer:</td>
+                        <td>O Magabeane</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
     <button id="downloadBtn2">Download Resource Game</button>
 
-    <a href="../games/sushigo.html"><i class="fa-solid fa-arrow-left"></i></a>
+    <a href="../games/sushigo.html"><i class="fas fa-arrow-left"></i> Back to SushiGo</a>
 
-    <!----------------------- Footer -------------------------->
     <footer>
         <div class="footer">
             <p>Where you can find me:</p>
-            <a href="https://github.com/Fefeswork?tab=repositories"><i class="fa-brands fa-github"></i></a>
-            <a href="mailto:ofentse.magabeane@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-            <a href=""><i class="fa-brands fa-discord"></i></a>
-            <a href="https://itch.io/profile/fefe-magabeane"><i class="fa-brands fa-itch-io"></i></a>
+            <!-- Social links -->
+            <a href="https://github.com/Fefeswork?tab=repositories"><i class="fab fa-github"></i></a>
+            <a href="mailto:ofentse.magabeane@gmail.com"><i class="far fa-envelope"></i></a>
+            <a href=""><i class="fab fa-discord"></i></a>
+            <a href="https://itch.io/profile/fefe-magabeane"><i class="fab fa-itch-io"></i></a>
         </div>
     </footer>
 
-    <!------------ JS Linking ---------------------->
+    <!-- JS linking -->
     <script src="../../JS/download.js"></script>
 </body>
 </html>

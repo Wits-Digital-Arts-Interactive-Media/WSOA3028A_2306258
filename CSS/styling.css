@@ -5,7 +5,7 @@ body{
 }
 
 nav {
-  background-color: rgba(255, 255, 255, 0.304);
+  background-color: rgba(255, 255, 255, 0.244);
   padding: 1em 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.082);
 }
@@ -85,6 +85,16 @@ i{
 p{
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
+}
+
+h4{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h5{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: none;
+
 }
 
 .content-container{
@@ -183,10 +193,46 @@ p{
 }
 
 
-.table{
-  float: right;
-  margin-top: 50em;
-  margin-left: 15em;
+/* Custom styles for the grid table */
+.RM-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px; /* Adjust the gap between images and table */
+  margin-top: 20px; /* Optional margin for separation */
+}
+
+.RM-div .portfolio-images img {
+  width: 100%; /* Make images responsive within their container */
+  height: auto;
+  display: block; /* Remove any potential spacing issues */
+}
+
+.table {
+  width: 100%; /* Set table width to 100% for full width within RM-div */
+  margin: 0 auto; /* Center the table horizontally */
+  padding: 20px; /* Increased padding for better spacing */
+  margin-top: 15em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ccc;
+  padding: 12px; /* Increased padding for a larger table */
+  font-size: 16px; /* Increased font size for better readability */
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f271;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: rgba(169, 135, 144, 0.336);
 }
 
 
@@ -201,10 +247,12 @@ p{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
   margin: 4px 3px;
   cursor: pointer;
   margin-left: 42em;
 }
+
 
 .button:hover {
   background-color: rgba(171, 118, 153, 0.822);
@@ -255,6 +303,11 @@ h3{
 .DA-description P{
   font-size: 10px;
   margin-left: 5em;
+}
+
+.game-notes{
+ font-size: 25px;
+ margin-bottom: 200px;
 }
 
 
